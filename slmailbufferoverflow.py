@@ -1,4 +1,4 @@
-#Injects a shellcode into the SLMAIL application.
+#Injects a custom shellcode into the SLMAIL application.
 
 import socket
 
